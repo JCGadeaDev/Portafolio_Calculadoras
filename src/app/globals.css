@@ -1,0 +1,135 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --brand-0: #002021; 
+  --brand-1: #001D1E;
+  --brand-2: #132023;
+  --brand-3: #2F2023;
+  --brand-4: #462022;
+  --brand-5: #501415;
+  --background: #0a000d;
+  --foreground: #fff4ff;
+  --card: #120010;
+  --card-foreground: #fff4ff;
+  --popover: #150012;
+  --popover-foreground: #fff4ff;
+  --primary: var(--brand-0);
+  --primary-foreground: #fff4ff;
+  --secondary: rgba(255, 255, 255, 0.12);
+  --secondary-foreground: #ffe5ff;
+  --muted: rgba(255, 255, 255, 0.1);
+  --muted-foreground: rgba(255, 255, 255, 0.65);
+  --accent: rgba(255, 255, 255, 0.1);
+  --accent-foreground: #fff4ff;
+  --destructive: #ff4e4e;
+  --border: rgba(255, 255, 255, 0.2);
+  --input: rgba(255, 255, 255, 0.2);
+  --ring: rgba(255, 255, 255, 0.35);
+  --chart-1: var(--brand-0);
+  --chart-2: var(--brand-2);
+  --chart-3: var(--brand-4);
+  --chart-4: #ffd399;
+  --chart-5: #ffe7c4;
+  --sidebar: #1b0015;
+  --sidebar-foreground: #fff4ff;
+  --sidebar-primary: var(--brand-1);
+  --sidebar-primary-foreground: #fff4ff;
+  --sidebar-accent: rgba(255, 255, 255, 0.08);
+  --sidebar-accent-foreground: #fff4ff;
+  --sidebar-border: rgba(255, 255, 255, 0.15);
+  --sidebar-ring: rgba(255, 255, 255, 0.3);
+}
+
+.dark {
+  --background: #020005;
+  --foreground: #ffe5ff;
+  --card: #1b0015;
+  --card-foreground: #ffe5ff;
+  --popover: #1b0015;
+  --popover-foreground: #ffe5ff;
+  --primary: var(--brand-1);
+  --primary-foreground: #ffe5ff;
+  --secondary: rgba(255, 255, 255, 0.12);
+  --secondary-foreground: #ffe5ff;
+  --muted: rgba(255, 255, 255, 0.08);
+  --muted-foreground: rgba(255, 255, 255, 0.6);
+  --accent: rgba(255, 255, 255, 0.1);
+  --accent-foreground: #ffe5ff;
+  --destructive: #ff4e4e;
+  --border: rgba(255, 255, 255, 0.15);
+  --input: rgba(255, 255, 255, 0.15);
+  --ring: rgba(255, 255, 255, 0.35);
+  --chart-1: var(--brand-0);
+  --chart-2: var(--brand-2);
+  --chart-3: var(--brand-4);
+  --chart-4: #ffd399;
+  --chart-5: #ffe7c4;
+  --sidebar: #14000f;
+  --sidebar-foreground: #ffe5ff;
+  --sidebar-primary: var(--brand-0);
+  --sidebar-primary-foreground: #ffe5ff;
+  --sidebar-accent: rgba(255, 255, 255, 0.08);
+  --sidebar-accent-foreground: #ffe5ff;
+  --sidebar-border: rgba(255, 255, 255, 0.1);
+  --sidebar-ring: rgba(255, 255, 255, 0.25);
+}
+
+.My-Color-0 { color: var(--brand-0); }
+.My-Color-1 { color: var(--brand-1); }
+.My-Color-2 { color: var(--brand-2); }
+.My-Color-3 { color: var(--brand-3); }
+.My-Color-4 { color: var(--brand-4); }
+.My-Color-5 { color: var(--brand-5); }
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
