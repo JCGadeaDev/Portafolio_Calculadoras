@@ -35,7 +35,7 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 src/
 ├── components/     - Componentes reutilizables
 ├── app/            - Rutas y páginas
-└── [Agregar según tu estructura]
+└── 
 ```
 
 ## 📝 Licencia
